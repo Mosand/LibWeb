@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+    "http://struts.apache.org/dtds/struts-2.3.dtd"> 
+<struts>
+	<package name="default" extends="struts-default,json-default" namespace="/">
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="TEACHER">/pages/teacher.jsp</result>
+			<result name="STUDENT">/pages/students.jsp</result>
+			<result name="PWDERROR">/pages/index.jsp</result>
+			<result name="NONEXIST">/pages/index.jsp</result>
+		</action>
+		
+		<action name="note_*" class="noteAction" method="{1}">
+		        <!-- 文件上传拦截器，限制运行上传的文件的类型，还有其他一个方法，这是其中一个 -->
+                <interceptor-ref name="defaultStack">
+                   <!-- 限制运行的文件的扩展名 fileUpload.allowedExtensions固定写法-->
+                   <param name="fileUpload.allowedExtensions">doc,docx</param>
+                </interceptor-ref>
+            <result name="uploadSuccess">/pages/students.jsp</result> 
+                <!-- 错误提示，档文件上传出现错误的时候，struts内部会返回input视图，
+                                               错误视图，所以就需要我们在struts.xml中配置Input视图对应的错误页面 -->
+            <result name="uploadFail">/pages/students.jsp</result>
+			<result name="findSuccess" type="json">
+				<param name="root">lists2</param>
+			</result>
+			<result name="findfail" type="redirect">note_findAllUserNote.action</result>
+			<result name="findAllSuccess" type="json">
+				<param name="root">lists</param>
+			</result>
+			<result name="findAllFail">/pages/teacher.jsp</result>
+			<result name="findOneSuccess" type="json">
+				<param name="root">lists3</param>
+			</result>
+			<!--<result name="findOneFail" type="redirect">note_findAllUserNote.action</result>  -->
+			<result name="findOneFail">/pages/students.jsp</result>
+		</action>
+		
+		<action name="weekly_*" class="weeklyAction" method="{1}">
+					<!-- 文件上传拦截器，限制运行上传的文件的类型，还有其他一个方法，这是其中一个 -->
+                <interceptor-ref name="defaultStack">
+                   <!-- 限制运行的文件的扩展名 fileUpload.allowedExtensions固定写法-->
+                   <param name="fileUpload.allowedExtensions">doc,docx</param>
+                </interceptor-ref>
+			<result name="uploadSuccess">/pages/students.jsp</result>
+			<result name="uploadFail">/pages/students.jsp</result>
+			<result name="findSuccess" type="json">
+				<param name="root">lists2</param>
+			</result>
+			<result name="findFail" type="redirect">weekly_findAllUserWeekly.action</result>
+			<result name="findAllSuccess" type="json">
+				<param name="root">lists</param>
+			</result>		
+			<result name="findAllFail">/pages/teacher.jsp</result>
+			<result name="findOneSuccess" type="json">
+				<param name="root">lists3</param>
+			</result>
+			<!-- <result name="findOneFail" type="redirect">weekly_findAllUserWeekly.action</result> -->
+			<result name="findOneFail">/pages/students.jsp</result>
+		</action> 
+		
+		<action name="commentNote_*" class="commentNoteAction" method="{1}">
+			<result name="saveSuccess">/pages/teacher.jsp</result>
+			<result name="saveFail">/pages/teacher.jsp</result>
+			<result name="updateSuccess">/pages/teacher.jsp</result>
+			<result name="updateFail">/pages/teacher.jsp</result>
+			<result name="findCommentSuccess" type="json">
+				<param name="root">lists</param>
+			</result>
+			<result name="findCommentFail">/pages/teacher.jsp</result>
+			<result name="findTCommentSuccess" type="json">
+				<param name="root">lists2</param>
+			</result>
+			<result name="findTCommentFail">/pages/students.jsp</result>
+		</action> 
+		
+		<action name="commentWeekly_*" class="commentWeeklyAction" method="{1}">
+			<result name="saveSuccess">/pages/teacher.jsp</result>
+			<result name="saveFail">/pages/teacher.jsp</result>
+			<result name="updateSuccess">/pages/teacher.jsp</result>
+			<result name="updateFail">/pages/teacher.jsp</result>
+			<result name="findCommentSuccess" type="json">
+				<param name="root">lists</param>
+			</result>
+			<result name="findCommentFail">/pages/teacher.jsp</result>
+			<result name="findTCommentSuccess" type="json">
+				<param name="root">lists2</param>
+			</result>
+			<result name="findTCommentFail">/pages/students.jsp</result>
+		</action> 
+		
+		<action name="downloadFile" class="com.action.DownloadAction" >
+              <result name="success" type="stream">
+               <!-- result类型是流(stream)类型 -->
+                 <param name="inputname">inputStream</param><!-- inputName指向被下载文件的来源,对应Action中返回的InputStream -->
+                 <param name="contentType">${contentType}</param><!-- 下载的内容类型，如图片类型、文档类型等…… -->
+                 <param name="contentDisposition">
+                     <!-- 指定文件下载的处理方式，内联(inline)和附件(attachment)两种方式，attachment会弹出文件保存对话框 -->
+                     attachment;filename=${filename}
+                 </param>
+             </result>
+         </action>
+         
+         <action name="displayweeklyFile" class="com.action.DisplayWeeklyAction">
+			<result name="success" type="httpheader">
+				<param name="status">301</param>
+				<param name="headers.Location">${urlData}</param>
+			</result>
+         	<result name="fail">/pages/teacher.jsp</result>
+         </action>
+         
+         <action name="displaynoteFile" class="com.action.DisplayNoteAction">
+			<result name="success" type="httpheader">
+				<param name="status">301</param>
+				<param name="headers.Location">${urlData}</param>
+			</result>
+         	<result name="fail">/pages/teacher.jsp</result>
+         </action>
+         
+	</package>
+	
+	
+</struts>    

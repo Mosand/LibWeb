@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+     <class name="com.entity.CommentNote" table="commentnote" entity-name="commentnote"  schema="web">
+           <id name="cid" column="cid">
+                <generator class="identity"></generator>
+           </id>
+           <property name="nid" column="nid"></property>
+           <property name="content" column="content"></property>
+           <property name="createtime">
+           		<column name="createtime"/>
+           </property>
+           <property name="authorname" column="authorname"></property>
+     </class>
+</hibernate-mapping>

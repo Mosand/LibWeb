@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+
+	<!-- 引入外部属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+
+	<!-- 配置连接池 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driverClass}"></property>
+		<property name="jdbcUrl" value="${jdbc.url}"></property>
+		<property name="user" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+	<!-- 配置hibernate的相关属性 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 配置hibernate属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop><!-- 有表自动更新表结构，没有就创建表 -->
+			</props>
+		</property>
+
+		<!-- 配置关联关系映射文件 -->
+		<property name="mappingResources">
+			<list>
+				<value>com/entity/User.hbm.xml</value>
+				<value>com/entity/Note.hbm.xml</value> 
+				<value>com/entity/Weekly.hbm.xml</value>
+			    <value>com/entity/CommentNote.hbm.xml</value>
+			    <value>com/entity/CommentWeekly.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 配置action，action交由spring管理 -->
+	<bean id="userAction" class="com.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	<bean id="noteAction" class="com.action.NoteAction" scope="prototype">
+		<property name="noteService" ref="noteService"></property>
+	</bean> 
+	<bean id="weeklyAction" class="com.action.WeeklyAction" scope="prototype">
+		<property name="weeklyService" ref="weeklyService"></property>
+	</bean>
+	<bean id="commentNoteAction" class="com.action.CommentNoteAction" scope="prototype">
+		<property name="commentNoteService" ref="commentNoteService"></property>
+	</bean>
+	<bean id="commentWeeklyAction" class="com.action.CommentWeeklyAction" scope="prototype">
+		<property name="commentWeeklyService" ref="commentWeeklyService"></property>
+	</bean> 
+	
+	<!-- 配置业务层service --> 
+	<bean id="userService" class="com.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	<bean id="noteService" class="com.service.impl.NoteServiceImpl">
+		<property name="noteDao" ref="noteDao"></property>
+	</bean> 
+	<bean id="weeklyService" class="com.service.impl.WeeklyServiceImpl">
+		<property name="weeklyDao" ref="weeklyDao"></property>
+	</bean>
+	<bean id="commentNoteService" class="com.service.impl.CommentNoteServiceImpl">
+		<property name="commentNoteDao" ref="commentNoteDao"></property>
+	</bean> 
+	<bean id="commentWeeklyService" class="com.service.impl.CommentWeeklyServiceImpl">
+		<property name="commentWeeklyDao" ref="commentWeeklyDao"></property>
+	</bean> 
+	
+	<!-- 配置dao -->
+	<bean id="userDao" class="com.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="noteDao" class="com.dao.impl.NoteDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean> 
+	<bean id="weeklyDao" class="com.dao.impl.WeeklyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="commentNoteDao" class="com.dao.impl.CommentNoteDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="commentWeeklyDao" class="com.dao.impl.CommentWeeklyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>  
+	
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- 开启注解事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+</beans>

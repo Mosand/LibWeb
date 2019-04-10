@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+     <class name="com.entity.Note" table="note" entity-name="note">
+           <id name="nid" column="nid">
+                <generator class="increment"></generator>
+           </id>
+           <property name="username" column="username"></property>
+           <property name="title" column="title"></property>
+           <property name="fileurl" column="fileurl"></property>
+           <property name="createtime" column="createtime"></property>
+           <property name="updatetime" column="updatetime"></property>
+     </class>
+</hibernate-mapping>
