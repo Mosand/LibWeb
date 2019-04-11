@@ -21,16 +21,16 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.service.NoteService;
 
 /*
- * param½âÊÍ
- * username:ÉÏ´«noteµÄÓÃ»§Ãû×Ö
- * title£ºnoteµÄtitle
- * fileurl£ºÉÏ´«noteµÄÎÄ¼şÂ·¾¶
- * createtime:ÉÏ´«noteµÄÊ±¼ä
- * updatetime:¸üĞÂnoteµÄÊ±¼ä
- * username2:»ñÈ¡ÀÏÊ¦¶ËËÑË÷¿òµÄÑ§ÉúÃû×Ö£¬ÒòÎªÊÇÍ¨¹ıÑ§ÉúÃû×ÖÀ´ËÑË÷
- * lists£ºÀÏÊ¦¶ËËùÓĞÑ§ÉúµÄnote×é³ÉµÄÁĞ±í
- * lists2£ºÀÏÊ¦¶Ë²éÕÒÒ»¸öÑ§ÉúµÄnote×é³ÉµÄÁĞ±í
- * list3£ºÑ§Éú¶Ë²éÕÒ±¾Ñ§ÉúµÄnote×é³ÉµÄÁĞ±í
+ * paramè§£é‡Š
+ * username:ä¸Šä¼ noteçš„ç”¨æˆ·åå­—
+ * titleï¼šnoteçš„title
+ * fileurlï¼šä¸Šä¼ noteçš„æ–‡ä»¶è·¯å¾„
+ * createtime:ä¸Šä¼ noteçš„æ—¶é—´
+ * updatetime:æ›´æ–°noteçš„æ—¶é—´
+ * username2:è·å–è€å¸ˆç«¯æœç´¢æ¡†çš„å­¦ç”Ÿåå­—ï¼Œå› ä¸ºæ˜¯é€šè¿‡å­¦ç”Ÿåå­—æ¥æœç´¢
+ * listsï¼šè€å¸ˆç«¯æ‰€æœ‰å­¦ç”Ÿçš„noteç»„æˆçš„åˆ—è¡¨
+ * lists2ï¼šè€å¸ˆç«¯æŸ¥æ‰¾ä¸€ä¸ªå­¦ç”Ÿçš„noteç»„æˆçš„åˆ—è¡¨
+ * list3ï¼šå­¦ç”Ÿç«¯æŸ¥æ‰¾æœ¬å­¦ç”Ÿçš„noteç»„æˆçš„åˆ—è¡¨
  */
 public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	
@@ -49,11 +49,11 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	private List<Note> lists3 = new ArrayList<Note>();
 	private static final long serialVersionUID = 1L;
 	
-    //¶ÔÓ¦±íµ¥µÄfile1  <input type="file" name="file1"/>
+    //å¯¹åº”è¡¨å•çš„file1  <input type="file" name="file1"/>
 	private File file1;
-    //µ±Ç°ÉÏ´«µÄÎÄ¼şÃû
+    //å½“å‰ä¸Šä¼ çš„æ–‡ä»¶å
     private String file1FileName;
-    //ÎÄ¼şÀàĞÍ(MIME)
+    //æ–‡ä»¶ç±»å‹(MIME)
     private String file1ContentType;
     public void setFile1(File file1) {
         this.file1 = file1;
@@ -139,7 +139,7 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	public void setUser(User user) {
 		this.user = user;
 	}
-	//Õâ¸ö·½·¨±ØĞëĞ´ÉÏ
+	//è¿™ä¸ªæ–¹æ³•å¿…é¡»å†™ä¸Š
     public List<Note> getLists() {
         return lists;
     }
@@ -164,17 +164,18 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	
 	public String upload() throws Exception{
 		
-		ActionContext.getContext().put("Student", username);//ÉÏ´«Íêºó£¬Ç°¶Ë¸ù¾İusernameÀ´ÖØĞÂ¼ÓÔØ½çÃæ
-		//¿ªÊ¼ÄÃµ½ÉÏ´«µÄÎÄ¼ş£¬½øĞĞ´¦Àí,ÉÏ´«Ö®Ç°£¬Òª´´½¨Ò»¸öuploadÄ¿Â¼
-        System.out.println("²âÊÔÉÏ´«µÄÎÄ¼ş");
-        //°ÑÎÄ¼şÉÏ´«µ½uploadÄ¿Â¼£¬»ñÈ¡ÉÏ´«µÄÄ¿Â¼Â·¾¶
-        String path="D://workspace//libWeb//WebContent//note";      
+		ActionContext.getContext().put("Student", username);//ä¸Šä¼ å®Œåï¼Œå‰ç«¯æ ¹æ®usernameæ¥é‡æ–°åŠ è½½ç•Œé¢
+		//å¼€å§‹æ‹¿åˆ°ä¸Šä¼ çš„æ–‡ä»¶ï¼Œè¿›è¡Œå¤„ç†,ä¸Šä¼ ä¹‹å‰ï¼Œè¦åˆ›å»ºä¸€ä¸ªuploadç›®å½•
+        System.out.println("æµ‹è¯•ä¸Šä¼ çš„æ–‡ä»¶");
+        //æŠŠæ–‡ä»¶ä¸Šä¼ åˆ°uploadç›®å½•ï¼Œè·å–ä¸Šä¼ çš„ç›®å½•è·¯å¾„
+        String path="/note";//ç›¸å¯¹è·¯å¾„
+	String target=ServletActionContext.getServletContext().getRealPath(path);
         System.out.println("path:"+path);
         if(file1FileName != null){
-        	//´´½¨Ä¿±êÎÄ¼ş¶ÔÏó,ÎÄ¼şÃûfile1FileName£¬¸ñÊ½_FileName
-            File destFile=new File(path,file1FileName);
+        	//åˆ›å»ºç›®æ ‡æ–‡ä»¶å¯¹è±¡,æ–‡ä»¶åfile1FileNameï¼Œæ ¼å¼_FileName
+            File destFile=new File(target,file1FileName);
             System.out.println("destFile:"+destFile);
-            //°ÑÉÏ´«µÄÎÄ¼ş£¬¿½±´µ½Ä¿±êÎÄ¼şÖĞ
+            //æŠŠä¸Šä¼ çš„æ–‡ä»¶ï¼Œæ‹·è´åˆ°ç›®æ ‡æ–‡ä»¶ä¸­
             FileUtils.copyFile(file1, destFile);
             Date date=new Date();
     		DateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -193,7 +194,7 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
     		fileurl=destFile.getPath();
     		//fileurl=destFile.getPath();
     		note.setFileurl(fileurl);
-    		System.out.println("action note upload·½·¨Ö´ĞĞ");
+    		System.out.println("action note uploadæ–¹æ³•æ‰§è¡Œ");
     		String result=noteService.saveNote(username,title,fileurl,createtime,updatetime);
     		if(result.equals("successSave")){
     			//ActionContext.getContext().put("Student",username);
@@ -206,9 +207,9 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 			return "uploadFail";
 	}
 	
-	//´«Í³·½Ê½·µ»ØajaxÊı¾İ£¬ÕâÖÖ·µ»Ø·½Ê½²»ĞèÒªÔÙÅäÖÃÎÄ¼şÖĞÅäÖÃ
+	//ä¼ ç»Ÿæ–¹å¼è¿”å›ajaxæ•°æ®ï¼Œè¿™ç§è¿”å›æ–¹å¼ä¸éœ€è¦å†é…ç½®æ–‡ä»¶ä¸­é…ç½®
     public String getState(){
-        System.out.println("´«Í³µÄajax");
+        System.out.println("ä¼ ç»Ÿçš„ajax");
         HttpServletResponse response = ServletActionContext.getResponse();
         try {
             PrintWriter out = response.getWriter();
@@ -219,14 +220,14 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
         return null;
     }
 	
-	public String findOneUserNote(){//ÕÒÒ»¸öÑ§ÉúµÄÖÜ±¨£¬·µ»ØÒ»¸öÑ§ÉúnoteÁĞ±í
-		System.out.println("action.findOneUserNote·½·¨Ö´ĞĞ");
+	public String findOneUserNote(){//æ‰¾ä¸€ä¸ªå­¦ç”Ÿçš„å‘¨æŠ¥ï¼Œè¿”å›ä¸€ä¸ªå­¦ç”Ÿnoteåˆ—è¡¨
+		System.out.println("action.findOneUserNoteæ–¹æ³•æ‰§è¡Œ");
 		
-		int result = noteService.searchOneUserNote(username2);//Í¨¹ıÊäÈë¿òµÄusername2ÕÒnote
+		int result = noteService.searchOneUserNote(username2);//é€šè¿‡è¾“å…¥æ¡†çš„username2æ‰¾note
 		if(result == com.service.impl.NoteServiceImpl.SUCCESS){
 			lists2 = noteService.findByNoteAuthor(username2);
 			System.out.println("note"+lists2);
-			//ActionContext.getContext().put("Notelist", notelist);//½«ÁĞ±íÌí¼Óµ½ÉÏÏÂÎÄ£¬´«¸øÇ°¶Ë
+			//ActionContext.getContext().put("Notelist", notelist);//å°†åˆ—è¡¨æ·»åŠ åˆ°ä¸Šä¸‹æ–‡ï¼Œä¼ ç»™å‰ç«¯
 			return "findSuccess";
 		}else if(result == com.service.impl.NoteServiceImpl.FAIL){
 			//ActionContext.getContext().put("Teacher", );
@@ -238,8 +239,8 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	
 	
     
-	public String findAllUserNote(){//ÕÒËùÓĞÑ§ÉúµÄÖÜ±¨£¬·µ»ØËùÓĞÑ§ÉúÖÜ±¨ÁĞ±í£¬°´ÕÕÉÏ´«Ê±¼äÅÅĞò
-		System.out.println("action.findAllUserNote·½·¨Ö´ĞĞ");
+	public String findAllUserNote(){//æ‰¾æ‰€æœ‰å­¦ç”Ÿçš„å‘¨æŠ¥ï¼Œè¿”å›æ‰€æœ‰å­¦ç”Ÿå‘¨æŠ¥åˆ—è¡¨ï¼ŒæŒ‰ç…§ä¸Šä¼ æ—¶é—´æ’åº
+		System.out.println("action.findAllUserNoteæ–¹æ³•æ‰§è¡Œ");
 		int result = noteService.searchAllUserNote(note);
 		if(result == com.service.impl.NoteServiceImpl.SUCCESSALL){
 			lists = noteService.findByNoteAll();
@@ -253,14 +254,14 @@ public class NoteAction extends ActionSupport implements ModelDriven<Note>{
 	}
 	
 
-    public String findOneStuNote(){//Ñ§Éú¶ËÕÒÑ§ÉúµÄnote£¬·µ»ØÒ»¸öÑ§ÉúnoteÁĞ±í
-		System.out.println("action.findOneStuNote·½·¨Ö´ĞĞ");
-		int result = noteService.searchOneStuNote(username);//Í¨¹ı»ñÈ¡½çÃæusernameÀ´ÕÒnote
+    public String findOneStuNote(){//å­¦ç”Ÿç«¯æ‰¾å­¦ç”Ÿçš„noteï¼Œè¿”å›ä¸€ä¸ªå­¦ç”Ÿnoteåˆ—è¡¨
+		System.out.println("action.findOneStuNoteæ–¹æ³•æ‰§è¡Œ");
+		int result = noteService.searchOneStuNote(username);//é€šè¿‡è·å–ç•Œé¢usernameæ¥æ‰¾note
 		if(result == com.service.impl.NoteServiceImpl.SUCCESS){
 			
 			lists3 = noteService.findByNoteStu(username);
 			System.out.println("lists3"+lists3);
-			//ActionContext.getContext().put("Notelist", notelist);//½«ÁĞ±íÌí¼Óµ½ÉÏÏÂÎÄ£¬´«¸øÇ°¶Ë
+			//ActionContext.getContext().put("Notelist", notelist);//å°†åˆ—è¡¨æ·»åŠ åˆ°ä¸Šä¸‹æ–‡ï¼Œä¼ ç»™å‰ç«¯
 			return "findOneSuccess";
 		}else if(result == com.service.impl.NoteServiceImpl.FAIL){
 			//ActionContext.getContext().put("Teacher", );
