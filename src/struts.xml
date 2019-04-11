@@ -103,7 +103,7 @@
          
          <action name="displayweeklyFile" class="com.action.DisplayWeeklyAction">
 			<result name="success" type="httpheader">
-				<param name="status">301</param>
+				<param name="status">302</param>
 				<param name="headers.Location">${urlData}</param>
 			</result>
          	<result name="fail">/pages/teacher.jsp</result>
@@ -111,7 +111,7 @@
          
          <action name="displaynoteFile" class="com.action.DisplayNoteAction">
 			<result name="success" type="httpheader">
-				<param name="status">301</param>
+				<param name="status">302</param>
 				<param name="headers.Location">${urlData}</param>
 			</result>
          	<result name="fail">/pages/teacher.jsp</result>
