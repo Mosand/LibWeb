@@ -24,23 +24,23 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.service.WeeklyService;
 
 /*
- * param½âÊÍ
- * username2:ÉÏ´«weeklyµÄÓÃ»§Ãû×Ö
- * title£ºweeklyµÄtitle
- * fileurl£ºÉÏ´«weeklyµÄÎÄ¼şÂ·¾¶
- * createtime:ÉÏ´«weeklyµÄÊ±¼ä
- * updatetime:¸üĞÂweeklyµÄÊ±¼ä
- * username3:»ñÈ¡ÀÏÊ¦¶ËËÑË÷¿òµÄÑ§ÉúÃû×Ö£¬ÒòÎªÊÇÍ¨¹ıÑ§ÉúÃû×ÖÀ´ËÑË÷
- * lists£ºÀÏÊ¦¶ËËùÓĞÑ§ÉúµÄweekly×é³ÉµÄÁĞ±í
- * lists2£ºÀÏÊ¦¶Ë²éÕÒÒ»¸öÑ§ÉúµÄweekly×é³ÉµÄÁĞ±í
- * list3£ºÑ§Éú¶Ë²éÕÒ±¾Ñ§ÉúµÄweekly×é³ÉµÄÁĞ±í
+ * paramè§£é‡Š
+ * username2:ä¸Šä¼ weeklyçš„ç”¨æˆ·åå­—
+ * titleï¼šweeklyçš„title
+ * fileurlï¼šä¸Šä¼ weeklyçš„æ–‡ä»¶è·¯å¾„
+ * createtime:ä¸Šä¼ weeklyçš„æ—¶é—´
+ * updatetime:æ›´æ–°weeklyçš„æ—¶é—´
+ * username3:è·å–è€å¸ˆç«¯æœç´¢æ¡†çš„å­¦ç”Ÿåå­—ï¼Œå› ä¸ºæ˜¯é€šè¿‡å­¦ç”Ÿåå­—æ¥æœç´¢
+ * listsï¼šè€å¸ˆç«¯æ‰€æœ‰å­¦ç”Ÿçš„weeklyç»„æˆçš„åˆ—è¡¨
+ * lists2ï¼šè€å¸ˆç«¯æŸ¥æ‰¾ä¸€ä¸ªå­¦ç”Ÿçš„weeklyç»„æˆçš„åˆ—è¡¨
+ * list3ï¼šå­¦ç”Ÿç«¯æŸ¥æ‰¾æœ¬å­¦ç”Ÿçš„weeklyç»„æˆçš„åˆ—è¡¨
  */
 public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 	
 	private Weekly weekly;
 	private WeeklyService weeklyService;
 	private String username2;
-	private String username3;//½ÓÊÕ½çÃæÊäÈëµÄ²éÑ¯¿òµÄÑ§ÉúÃû×Ö
+	private String username3;//æ¥æ”¶ç•Œé¢è¾“å…¥çš„æŸ¥è¯¢æ¡†çš„å­¦ç”Ÿåå­—
 	private String title;
 	private String fileurl;
 	private String createtime;
@@ -51,11 +51,11 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 	private List< Weekly> lists2 = new ArrayList<Weekly>();
 	private List<Weekly> lists3 = new ArrayList<Weekly>();
 	
-	//¶ÔÓ¦±íµ¥µÄfile1  <input type="file" name="file1"/>
+	//å¯¹åº”è¡¨å•çš„file1  <input type="file" name="file1"/>
 	private File file1;
-	//µ±Ç°ÉÏ´«µÄÎÄ¼şÃû
+	//å½“å‰ä¸Šä¼ çš„æ–‡ä»¶å
 	private String file1FileName;
-	//ÎÄ¼şÀàĞÍ(MIME)
+	//æ–‡ä»¶ç±»å‹(MIME)
 	private String file1ContentType;
 	public void setFile1(File file1) {
 	    this.file1 = file1;
@@ -67,7 +67,7 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 	    this.file1ContentType = file1ContentType;
     }	
 
-	//Ä£ĞÍÇı¶¯
+	//æ¨¡å‹é©±åŠ¨
 	@Override
 	public Weekly getModel(){
 		return weekly;
@@ -82,7 +82,7 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 	}
 	
 
-    //×¢ÈëweeklyService
+    //æ³¨å…¥weeklyService
 	public void setWeeklyService(WeeklyService weeklyService) {
 		this.weeklyService = weeklyService;
 	}
@@ -126,7 +126,7 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 		this.updatetime = updatetime;
 	}
 	
-	//Õâ¸ö·½·¨±ØĞëĞ´ÉÏ
+	//è¿™ä¸ªæ–¹æ³•å¿…é¡»å†™ä¸Š
     public List<Weekly> getLists() {
         return lists;
     }
@@ -134,7 +134,7 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
         this.lists = lists;
     }
     
-  //Õâ¸ö·½·¨±ØĞëĞ´ÉÏ
+  //è¿™ä¸ªæ–¹æ³•å¿…é¡»å†™ä¸Š
     public List<Weekly> getLists2() {
         return lists2;
     }
@@ -151,20 +151,22 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
     
 	public String upload() throws Exception{
 	
-		//¿ªÊ¼ÄÃµ½ÉÏ´«µÄÎÄ¼ş£¬½øĞĞ´¦Àí,ÉÏ´«Ö®Ç°£¬Òª´´½¨Ò»¸öuploadÄ¿Â¼
-		ActionContext.getContext().put("Student", username2);//ÉÏ´«Íêºó£¬Ç°¶Ë¸ù¾İusername2À´ÖØĞÂ¼ÓÔØ½çÃæ
-	    System.out.println("²âÊÔÉÏ´«µÄÎÄ¼ş");
-	    //°ÑÎÄ¼şÉÏ´«µ½uploadÄ¿Â¼£¬»ñÈ¡ÉÏ´«µÄÄ¿Â¼Â·¾¶
-	    String path="D:/workspace/libWeb/WebContent/weekly";
+		//å¼€å§‹æ‹¿åˆ°ä¸Šä¼ çš„æ–‡ä»¶ï¼Œè¿›è¡Œå¤„ç†,ä¸Šä¼ ä¹‹å‰ï¼Œè¦åˆ›å»ºä¸€ä¸ªuploadç›®å½•
+		ActionContext.getContext().put("Student", username2);//ä¸Šä¼ å®Œåï¼Œå‰ç«¯æ ¹æ®username2æ¥é‡æ–°åŠ è½½ç•Œé¢
+	    System.out.println("æµ‹è¯•ä¸Šä¼ çš„æ–‡ä»¶");
+	    //æŠŠæ–‡ä»¶ä¸Šä¼ åˆ°uploadç›®å½•ï¼Œè·å–ä¸Šä¼ çš„ç›®å½•è·¯å¾„
+	    String path="/weekly";//ç›¸å¯¹è·¯å¾„
+	    String target=ServletActionContext.getServletContext().getRealPath(path);
+	    //String path="D:/workspace/libWeb/WebContent/weekly";
 	    /*String path="/WEB-INF/upload";
 	    File file = new File(path);
 		    InputStream inputStream=new FileInputStream(file); */
 	    System.out.println("path:"+path);
-	    //´´½¨Ä¿±êÎÄ¼ş¶ÔÏó,ÎÄ¼şÃûfile1FileName£¬¸ñÊ½_FileName
+	    //åˆ›å»ºç›®æ ‡æ–‡ä»¶å¯¹è±¡,æ–‡ä»¶åfile1FileNameï¼Œæ ¼å¼_FileName
 	    if(file1FileName != null){
-	    	File destFile=new File(path,file1FileName);
+	    	File destFile=new File(target,file1FileName);
 		    System.out.println("destFile:"+destFile);
-		    //°ÑÉÏ´«µÄÎÄ¼ş£¬¿½±´µ½Ä¿±êÎÄ¼şÖĞ
+		    //æŠŠä¸Šä¼ çš„æ–‡ä»¶ï¼Œæ‹·è´åˆ°ç›®æ ‡æ–‡ä»¶ä¸­
 		    FileUtils.copyFile(file1, destFile);
 		    
 		    Date date=new Date();
@@ -182,7 +184,7 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 			weekly.setUsername2(username2);
 			fileurl=destFile.getPath();
 			weekly.setFileurl(fileurl);
-			System.out.println("action.upload·½·¨Ö´ĞĞ");
+			System.out.println("action.uploadæ–¹æ³•æ‰§è¡Œ");
 			String result=weeklyService.saveWeekly(username2,title,fileurl,createtime,updatetime);
 			if(result.equals("successSave")){
 				return "uploadSuccess";
@@ -193,9 +195,9 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 			return "uploadFail";
 	}
 	
-	//´«Í³·½Ê½·µ»ØajaxÊı¾İ£¬ÕâÖÖ·µ»Ø·½Ê½²»ĞèÒªÔÙÅäÖÃÎÄ¼şÖĞÅäÖÃ
+	//ä¼ ç»Ÿæ–¹å¼è¿”å›ajaxæ•°æ®ï¼Œè¿™ç§è¿”å›æ–¹å¼ä¸éœ€è¦å†é…ç½®æ–‡ä»¶ä¸­é…ç½®
     public String getState(){
-        System.out.println("´«Í³µÄajax");
+        System.out.println("ä¼ ç»Ÿçš„ajax");
         HttpServletResponse response = ServletActionContext.getResponse();
         try {
             PrintWriter out = response.getWriter();
@@ -206,10 +208,10 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
         return null;
     }
 	
-	public String findOneUserWeekly(){//ÀÏÊ¦¶ËÕÒÒ»¸öÑ§ÉúµÄÖÜ±¨£¬·µ»ØÒ»¸öÑ§ÉúÖÜ±¨ÁĞ±í
-		System.out.println("action.findOneUserWeekly·½·¨Ö´ĞĞ");	
+	public String findOneUserWeekly(){//è€å¸ˆç«¯æ‰¾ä¸€ä¸ªå­¦ç”Ÿçš„å‘¨æŠ¥ï¼Œè¿”å›ä¸€ä¸ªå­¦ç”Ÿå‘¨æŠ¥åˆ—è¡¨
+		System.out.println("action.findOneUserWeeklyæ–¹æ³•æ‰§è¡Œ");	
 		
-		int result = weeklyService.searchOneUserWeekly(username3);//Í¨¹ıusername3ÕÒÖÜ±¨
+		int result = weeklyService.searchOneUserWeekly(username3);//é€šè¿‡username3æ‰¾å‘¨æŠ¥
 		if(result == com.service.impl.WeeklyServiceImpl.SUCCESS){
 			lists2 = weeklyService.findByWeeklyAuthor(username3);
 			System.out.printf("weeklylist"+lists2);
@@ -220,8 +222,8 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 		return null;
 	}
 	
-	public String findAllUserWeekly(){//ÀÏÊ¦¶ËÕÒËùÓĞÑ§ÉúµÄÖÜ±¨£¬·µ»ØËùÓĞÑ§ÉúÖÜ±¨ÁĞ±í£¬°´ÕÕÉÏ´«Ê±¼äÅÅĞò
-		System.out.println("action.findAllUserWeekly·½·¨Ö´ĞĞ");
+	public String findAllUserWeekly(){//è€å¸ˆç«¯æ‰¾æ‰€æœ‰å­¦ç”Ÿçš„å‘¨æŠ¥ï¼Œè¿”å›æ‰€æœ‰å­¦ç”Ÿå‘¨æŠ¥åˆ—è¡¨ï¼ŒæŒ‰ç…§ä¸Šä¼ æ—¶é—´æ’åº
+		System.out.println("action.findAllUserWeeklyæ–¹æ³•æ‰§è¡Œ");
 		int result = weeklyService.searchAllUserWeekly(weekly);
 		if(result == com.service.impl.WeeklyServiceImpl.SUCCESSALL){
 			lists = weeklyService.findByWeeklyAll();
@@ -233,9 +235,9 @@ public class WeeklyAction extends ActionSupport  implements ModelDriven<Weekly>{
 		return null;
 	}
 
-	public String findOneStuWeekly(){//Ñ§Éú¶ËÕÒÑ§ÉúµÄweekly£¬·µ»ØÒ»¸öÑ§ÉúweeklyÁĞ±í
-		System.out.println("action.findOneStuNote·½·¨Ö´ĞĞ");
-		int result = weeklyService.searchOneStuWeekly(username2);//Í¨¹ı»ñÈ¡½çÃæusername2À´ÕÒweekly
+	public String findOneStuWeekly(){//å­¦ç”Ÿç«¯æ‰¾å­¦ç”Ÿçš„weeklyï¼Œè¿”å›ä¸€ä¸ªå­¦ç”Ÿweeklyåˆ—è¡¨
+		System.out.println("action.findOneStuNoteæ–¹æ³•æ‰§è¡Œ");
+		int result = weeklyService.searchOneStuWeekly(username2);//é€šè¿‡è·å–ç•Œé¢username2æ¥æ‰¾weekly
 		if(result == com.service.impl.NoteServiceImpl.SUCCESS){			
 			lists3 = weeklyService.findByWeeklyStu(username2);
 			System.out.println("lists3"+lists3);
