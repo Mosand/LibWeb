@@ -5,6 +5,8 @@
 	String webContent = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 	request.setAttribute("webContent", webContent);
+	String downpath = "D:/workspace/libWeb/WebContent/";	
+	request.setAttribute("downpath", downpath);	
 %>
 <%
 String wid=request.getParameter("wid");

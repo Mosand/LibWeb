@@ -70,7 +70,7 @@
 	<div class="header">
 		<div class="container">			
 			<div class="logo">
-				<a href="${webContent}pages/index.jsp"><img src="${webContent}images/logo.png" alt="data analysis lab " ></a>
+				<a href="${webContent}pages/index.jsp"><img src="${webContent}images/logo.png" alt="data analysis team " ></a>
 			</div>
 <!-- 索引 -->
 			<div class="top-nav">			
@@ -114,12 +114,14 @@
 			  </div>			  
 	        </li>
 	        
+	        <!-- 
 	        <li>
 	          <img src="${webContent}images/bg3.jpg" alt="">	 
 				<div class="banner-matter">
 				<h2></h2>
 			  </div>			  
 	        </li>
+	         -->
 	        
 	      </ul>
 	    </div>
@@ -209,24 +211,24 @@
                             </div>
 						</div>
 									
-						<div class="col-md-4 activity-grid">
+						<!-- <div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/zhangxueyan.png" />
                                 <p style="margin-top:10px;">张雪岩&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：深度学习，数据挖掘</p>
                             </div>
-						</div>	
-							
-						<div class="clearfix"> </div>	
-<!--每行都要添加<div class="clearfix"> </div> -->						
-											
+						</div>	 -->
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/liujuexiong.png" />
                                 <p style="margin-top:10px;">刘崛雄&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>	
+						</div>
+							
+						<div class="clearfix"> </div>	
+<!--每行都要添加<div class="clearfix"> </div> -->						
+																		
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/liuxing.png" />
@@ -240,16 +242,17 @@
                                 <p style="margin-top:10px;">翟嘉伊&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>			
-						<div class="clearfix"> </div>
-						
+						</div>
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/zhangxueyan.png" />
                                 <p style="margin-top:10px;">张雪岩&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>	
+						</div>			
+						<div class="clearfix"> </div>
+						
+							
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/zhangweiqi.png" />
@@ -263,12 +266,7 @@
                                 <p style="margin-top:10px;">艾擎&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>			
-						<div class="clearfix"> </div>
-						
-						
-						
-						
+						</div>		
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/dengyijiao.png" />
@@ -276,6 +274,12 @@
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
 						</div>	
+						<div class="clearfix"> </div>
+						
+						
+						
+						
+							
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/caiting.png" />
@@ -290,10 +294,6 @@
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
 						</div>			
-						<div class="clearfix"> </div>
-												
-												
-												
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/weikai.png" />
@@ -301,10 +301,15 @@
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
 						</div>	
+						<div class="clearfix"> </div>
+												
+												
+												
+						
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/yusuzhe.png" />
-                                <p style="margin-top:10px;">余苏哲&nbsp;&nbsp;&nbsp;硕士生</p>
+                                <p style="margin-top:10px;">余苏喆&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
 						</div>		
@@ -314,18 +319,19 @@
                                 <p style="margin-top:10px;">郭鹏宇&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>			
-						<div class="clearfix"> </div>
-						
-						
-						
+						</div>		
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/tangyucheng.png" />
                                 <p style="margin-top:10px;">唐榆程&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>	
+						</div>		
+						<div class="clearfix"> </div>
+						
+						
+						
+						
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/zhangzhiyang.png" />
@@ -339,19 +345,20 @@
                                 <p style="margin-top:10px;">谭琪&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>			
-						<div class="clearfix"> </div>
-						
-						
-						
-						
+						</div>
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/liailing.png" />
                                 <p style="margin-top:10px;">李艾玲&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>	
+						</div>			
+						<div class="clearfix"> </div>
+						
+						
+						
+						
+							
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/wangting.png" />
@@ -365,9 +372,7 @@
                                 <p style="margin-top:10px;">宋伟聪&nbsp;&nbsp;&nbsp;硕士生</p>
                                 <p>研究方向：数据研发、机器学习</p>
                             </div>
-						</div>			
-						<div class="clearfix"> </div>
-						
+						</div>	
 						<div class="col-md-4 activity-grid">
                             <div class="member_img">
                                 <img src="${webContent}images/member/xvjunhao.jpg" />
@@ -376,6 +381,7 @@
                             </div>
 						</div>			
 						<div class="clearfix"> </div>
+												
 					</div>
 			</div>		
 

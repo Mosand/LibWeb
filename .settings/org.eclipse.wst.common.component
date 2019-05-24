@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="EMSystemDo">
+    <wb-module deploy-name="libWeb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/EMSystemDo/build/classes"/>
-        <property name="context-root" value="LibWeb"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/lib"/>
+        <property name="java-output-path" value="/libWeb/build/classes"/>
+        <property name="context-root" value="libWeb"/>
     </wb-module>
 </project-modules>

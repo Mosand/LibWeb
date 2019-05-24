@@ -17,10 +17,15 @@ import com.service.UserService;
 
 public class UserAction extends ActionSupport implements ModelDriven<User>{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private User user;
 	private UserService userService;
 	private String username;
 	private String password;
+	private String msg;
 	
 
 	public UserService getUserService() {
@@ -63,6 +68,18 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 		this.user = user;
 	}
 	
+	
+	
+	public String getMsg() {
+		return msg;
+	}
+
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+
 	public String login(){
 		System.out.println("action.login方法执行");
 		// 调用业务层方法
@@ -79,10 +96,12 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 			return "STUDENT";
 		}  
 		  else if (result == com.service.impl.UserServiceImpl.PWDERROR) {
-			return "PWDERROR";
+			  msg="用户名或密码错误！请重新输入！";			  
+			  return "PWDERROR";
 		} 
 		  else if (result == com.service.impl.UserServiceImpl.NONEXIST) {
-			return "NONEXIST";
+			  msg="用户名不存在！请重新输入！";
+			  return "NONEXIST";
 		}
 		return null;
 	}

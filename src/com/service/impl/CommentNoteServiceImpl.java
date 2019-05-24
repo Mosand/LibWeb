@@ -1,6 +1,5 @@
 package com.service.impl;
 
-import java.util.Date;
 import java.util.List;
 
 import com.dao.CommentNoteDao;
@@ -18,18 +17,6 @@ public class CommentNoteServiceImpl implements CommentNoteService{
 	public void setCommentNoteDao(CommentNoteDao commentNoteDao) {
 		this.commentNoteDao = commentNoteDao;
 	}
-
-//	@Override
-//	public String saveNote() {
-//		// TODO Auto-generated method stub
-//		
-//		String result = commentNoteDao.saveNote(commentNote);
-//		if(result == "success"){
-//			return SUCCESS;
-//		}else
-//			return FAIL;
-//			
-//	}
 	
 	@Override
 	public String saveNote(int nid, String content, String createtime, String authorname) {

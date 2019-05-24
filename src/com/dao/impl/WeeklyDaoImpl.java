@@ -1,6 +1,5 @@
 package com.dao.impl;
 
-import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Query;
@@ -8,7 +7,6 @@ import org.hibernate.Session;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.dao.WeeklyDao;
-import com.entity.Note;
 import com.entity.Weekly;
 
 public class WeeklyDaoImpl extends HibernateDaoSupport implements WeeklyDao{
@@ -21,18 +19,29 @@ public class WeeklyDaoImpl extends HibernateDaoSupport implements WeeklyDao{
 		// TODO Auto-generated method stub
 		Session se =this.getSession();
 		String hql="";
-		if(username2==""){
-			return null;
+		try{
+			if(username2==""){
+				return null;
+			}
+			hql = "insert into weekly(username2,title,fileurl,createtime,updatetime) values(?,?,?,?,?)";
+			Query query= se.createSQLQuery(hql);
+			query.setString(0, username2);
+			query.setString(1, title);
+			query.setString(2, fileurl);
+			query.setString(3, createtime);
+			query.setString(4, updatetime);
+			query.executeUpdate();
+			
+			return "success";
+			
+		}catch(RuntimeException re){
+			throw re; 
+		}finally{
+			if(se!=null){
+				se.close();
+			}
 		}
-		hql = "insert into weekly(username2,title,fileurl,createtime,updatetime) values(?,?,?,?,?)";
-		Query query= se.createSQLQuery(hql);
-		query.setString(0, username2);
-		query.setString(1, title);
-		query.setString(2, fileurl);
-		query.setString(3, createtime);
-		query.setString(4, updatetime);
-		query.executeUpdate();
-		return "success";
+		
 	}
 	
 	public List<Weekly> findByWeeklyAuthor(String username3){

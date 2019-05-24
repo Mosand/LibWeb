@@ -116,7 +116,7 @@ public class DisplayWeeklyAction extends ActionSupport {
             urlData = urlData.replace("\"]", "");//去掉]
             //最后urlData是文件的浏览地址
             //URL realurl=new URL(urlData);
-            System.out.println("urlData"+urlData);//打印网络文件预览地址
+            System.out.println("urlData:"+urlData);//打印网络文件预览地址
  		    return "success";           
         } else {// 转换失败
             System.out.println("转换失败");

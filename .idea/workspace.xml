@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef484cb7-0f78-45e7-9dc7-ff8f392a982a" name="Default Changelist" comment="" />
+    <list default="true" id="ef484cb7-0f78-45e7-9dc7-ff8f392a982a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/images/chuangao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/2013电子科大复试C.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/2016复试C语言回忆版-By Dawnon.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/2017复试C专硕-最终版.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/3.13工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/3.6号工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/3月8日工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/WWW 2017 Accepted Papers.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/hometown.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/套餐10.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/套餐5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/学分转换.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/火车订票系统设计-参考范例1.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/神经网络作业1-201822090302-徐钧豪.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/第十三周工作周报-徐钧豪.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/绕城缓堵分析v6.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/note/编程题自测版.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/paper.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/paper.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/project.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/project.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/students.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/2016复试C语言回忆版-By Dawnon.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/2018笔试回忆版.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/3.13工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/3.6号工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/3月16日工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/3月8日工作日报.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/Identity-based encryption with outsourced revocation in cloud computing_91_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/hometown.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/hosts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/作文1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/套餐10.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/套餐3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/套餐6.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/套餐9.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/火车订票系统.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/神经网络作业1-201822090302-徐钧豪.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/第十三周工作周报-徐钧豪.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/课程报告-徐钧豪.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/课程报告模板.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/附件1-毕业设计（顶岗实习）接收函.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/附件2-毕业设计（顶岗实习）三方安全协议书.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/weekly/附件5-毕业设计（顶岗实习）定岗选题延期申请表.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/action/DisplayWeeklyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/action/DisplayWeeklyAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/action/NoteAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/action/NoteAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/action/UserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/action/UserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/action/WeeklyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/action/WeeklyAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/dao/impl/CommentNoteDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/dao/impl/CommentNoteDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/dao/impl/WeeklyDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/dao/impl/WeeklyDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/service/impl/CommentNoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/service/impl/CommentNoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/action/DisplayWeeklyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/action/DisplayWeeklyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/action/NoteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/action/NoteAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/action/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/action/UserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/action/WeeklyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/action/WeeklyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/impl/CommentNoteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/impl/CommentNoteDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/impl/WeeklyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/impl/WeeklyDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/service/impl/CommentNoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/impl/CommentNoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,51 +77,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebContent/pages/index.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="libWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libWeb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="LibWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LibWeb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555064298228" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,20 +148,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27025586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.32980332" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -102,26 +165,127 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="245" column="52" selection-start-line="245" selection-start-column="52" selection-end-line="245" selection-end-column="52" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>libWeb</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

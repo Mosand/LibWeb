@@ -5,6 +5,7 @@
 	String webContent = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 	request.setAttribute("webContent", webContent);
+
 %>
 <%      
 String wid=request.getParameter("wid");

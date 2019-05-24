@@ -114,6 +114,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					<p> 27.Zhang, Fengli (#)(*), Bai, Yang,Hou, Jie,Tian, Yuan-Wei.Detecting malicious users in P2P streaming systems by using feedback correlations,4th International Conference on Networks and Communications, NetCom, n Chennai, India,2013.12.22-2013.12.24</p>
 
+ 					<p> 28.Xueqin chen, Kunpeng Zhang,Fan Zhou, Goce Trajcevski, TingZhong, Fengli Zhang, Information Cascades Modeling via Deep Multi-Task Learning, SIGIR 2019 (CCF A)</p>
+ 					
+ 					<p> 29.Qiang Gao, Fan Zhou, Kunpeng Zhang, Goce Trajcevski, TingZhong, Fengli Zhang, Predicting Human Mobility via Variational Attention, WWW 2019 (CCF A)</p>
+ 					
+ 					<p> 30.Xueqin chen, Fan Zhou, Kunpeng Zhang, Goce Trajcevski, TingZhong, Fengli Zhang, Information Diffusion Prediction via Recurrent Cascades Convolution, ICDE 2019 (CCF A)</p>
+ 					
+ 					<p> 31.Qiang Gao, Goce Trajcevski, Fan Zhou, Kunpeng Zhang, Ting Zhong and Fengli Zhang, Trajectory based Social Circle Inference, SIGSPATIAL 2018</p>
+ 					
+ 					<p> 32.Qiang Gao, Goce Trajcevski, Fan Zhou, Kunpeng Zhang, Ting Zhong and Fengli Zhang, Trajectory based Social Circle Inference, SIGSPATIAL 2018</p>
+ 		
+ 		 			<p> 33.Fan Zhou, Qiang Gao, Goce Trajcevski, Kunpeng Zhang, Ting Zhong and Fengli Zhang ,Trajectory-User Linking via Variational AutoEncoder, IJCAI 2018 (CCF A)</p>
+ 		 					 						 					 					 					 					
 				</div>					
 			</div>
 		</div>
